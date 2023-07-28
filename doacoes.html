@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doações - Bem + Mulher</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <span class="redes-sociais">
+        <li id="mail"><a href=mailto:huttenloucher@gmail.com target="_blank"> Huttenloucher@gmail.com </a> </li>
+
+        <li id="tel"><a href="tel:+5511986817759" target="_blank"> +55 (11) 98681-7759 </a> </li>
+
+        <li id="endereço"> <a
+                href="https://www.google.com.br/maps/place/R.+das+Giestas+-+Vila+Lucia,+S%C3%A3o+Paulo+-+SP/@-23.5957069,-46.5777338,17z/data=!3m1!4b1!4m6!3m5!1s0x94ce5c67bf515c11:0xbdc36897529497cc!8m2!3d-23.5957118!4d-46.5755451!16s%2Fg%2F11cncfxt3y"
+                target="_blank"> Rua das Giestas - Vila Bela </a> </li>
+    </span>
+
+    <header>
+        <div class="limitador">
+            <a class="logo" href="index.html">
+                <img src="assets/imagens/logo-oficial.png" alt="logo-bem+mulher">
+            </a>
+
+            <nav>
+                <h1>Menu &equiv;</h1>
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="quem-somos.html">Quem Somos</a></li>
+                    <li>
+                        <a href="servicos.html">
+                        Projetos </a>
+                            <div class="sub-menu-1">
+                            <ul>
+                                <li>
+                                    <a href="estetica.html">Estética</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="fitness.html">Fitness</a>
+                                </li>
+
+                                <li>
+                                    <a href="cabelo.html">Cabelo</a>
+                                </li>
+                            </ul>
+                        </div> 
+                    </li>
+                    <li> <a href="doacoes.html">Doações</a></li>
+                    <li> <a href="contatos.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="doacoes">
+            <h1 class="centralizar">Doações</h1>
+            <h2 class="centralizar">Contribua com a causa das mulheres em situação de vunerabilidade. Faça sua doação ▼</h2>
+        </div>
+
+            <form action="" method="post">
+
+                <div>
+                    <label for="nome">Nome</label>
+                    <input required type="text" name="nome" id="nome">
+                </div>
+
+                <div>
+                    <label for="email">E-mail</label>
+                    <input required type="email" name="email" id="email">
+                </div>
+
+                <div>
+                    <label for="data">Data de Nascimento</label>
+                    <input required type="date" name="data" id="data">
+                </div>
+
+                <div>
+                    <label for="assunto">Metodo de Pagamento</label>
+                    <select required name="assunto" id="assunto">
+
+                        <option value=""></option>
+
+                        <option>Boleto Bancário</option>
+
+                        <option>Cartão de Credito</option>
+
+                        <option>Cartão de Debito</option>
+
+                        <option>Pix</option>
+                    </select>
+
+                    <div>
+                        <label for="number">Número do cartão</label> 
+                        <input required type="number" maxlength="1000" name="cartao" id="cartao">
+                    </div>
+
+                    <div>
+                        <label for="number">Valor à doar</label>
+                        <input required type="number" maxlength="1000" placeholder="R$" name="doar" id="doar">
+                    </div>
+
+                    <br>
+                    <button type="submit">Enviar Dados</button>
+                </div>
+            </form>
+
+    </main>
+
+    <footer>
+        <p>Projeto Integrador &copy; 2023</p>
+    </footer>
+
+    <!-- Script JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- Script JQuery.Mask -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+
+    <script src="js/menu.js"></script>
+    <script src="js/doacao.js"></script>
+
+
+</body>
+
+</html>
